@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/#support", label: "支援内容" },
   { href: "/#pricing", label: "料金" },
   { href: "/#flow", label: "導入の流れ" },
+  { href: "/column", label: "コラム" },
   { href: "/company", label: "会社情報" },
 ];
 

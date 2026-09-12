@@ -30,6 +30,9 @@ export function Footer() {
                 <Link href="/#faq">よくある質問</Link>
               </li>
               <li>
+                <Link href="/column">コラム</Link>
+              </li>
+              <li>
                 <Link href="/company">会社情報</Link>
               </li>
             </ul>

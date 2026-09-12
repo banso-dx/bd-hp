@@ -1,5 +1,6 @@
 // 会社の基本情報。実際の情報が確定し次第、ここを更新してください。
 export const siteConfig = {
+  siteUrl: "https://banso-dx.co.jp", // 仮のドメインです。正式ドメイン取得後に更新してください。
   serviceName: "伴走DX",
   companyName: "株式会社伴走DX",
   companyNameEn: "Banso DX Inc.",

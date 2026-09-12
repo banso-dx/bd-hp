@@ -1,0 +1,143 @@
+.header {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-subtle);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--color-text-faint);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-accent);
+}
+
+.headerMeta {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--color-text-faint);
+}
+
+.category {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.title {
+  margin-top: 16px;
+  font-size: 28px;
+  line-height: 1.5;
+  max-width: var(--content-narrow);
+}
+
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+.layout {
+  display: grid;
+  gap: 48px;
+  justify-content: center;
+}
+
+.article {
+  max-width: var(--content-narrow);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.article :global(h2) {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 21px;
+}
+
+.article :global(h3) {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.article :global(p) {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.95;
+  color: var(--color-text);
+}
+
+.article :global(ul),
+.article :global(ol) {
+  margin: 0 0 20px;
+  padding-left: 1.4em;
+  list-style: revert;
+  display: block;
+}
+
+.article :global(li) {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.article :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.article :global(th),
+.article :global(td) {
+  border: 1px solid var(--color-border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.article :global(th) {
+  background: var(--color-bg-subtle);
+}
+
+.article :global(strong) {
+  font-weight: 700;
+}
+
+.cta {
+  margin-top: 56px;
+  padding: 32px;
+  text-align: center;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.ctaTitle {
+  font-size: 17px;
+}
+
+.ctaActions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-accent);
+}

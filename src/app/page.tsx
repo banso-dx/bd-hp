@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { getAllColumnArticles } from "@/lib/column";
 import { siteConfig } from "@/lib/site-config";
 import styles from "./page.module.css";
 
@@ -112,6 +113,8 @@ const flowSteps = [
 ];
 
 export default function Home() {
+  const latestArticles = getAllColumnArticles().slice(0, 3);
+
   return (
     <>
       <section className={styles.hero}>
@@ -328,6 +331,35 @@ export default function Home() {
           <FaqAccordion />
         </div>
       </section>
+
+      {latestArticles.length > 0 && (
+        <section className={`${styles.section} ${styles.sectionAlt}`}>
+          <div className="container">
+            <Reveal>
+              <div className={styles.sectionHead}>
+                <p className="eyebrow">コラム</p>
+                <h2 className={styles.sectionTitle}>DX推進に役立つ情報を発信しています</h2>
+              </div>
+            </Reveal>
+            <div className={`${styles.grid} ${styles.grid3}`}>
+              {latestArticles.map((article, index) => (
+                <Reveal key={article.slug} delay={index * 70}>
+                  <Link href={`/column/${article.slug}`} className={styles.card} style={{ display: "block" }}>
+                    <p className={styles.cardNum}>{article.category}</p>
+                    <h3 className={styles.cardTitle}>{article.title}</h3>
+                    <p className={styles.cardText}>{article.description}</p>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+            <div style={{ marginTop: "40px", textAlign: "center" }}>
+              <Link href="/column" className="btn btnOutline">
+                コラム一覧を見る
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className={styles.ctaSection}>
         <div className="container">
