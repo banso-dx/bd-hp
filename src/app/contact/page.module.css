@@ -1,0 +1,111 @@
+.header {
+  padding: 72px 0 56px;
+  border-bottom: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-subtle);
+}
+
+.headerTitle {
+  margin-top: 16px;
+  font-size: 30px;
+}
+
+.headerLead {
+  margin-top: 16px;
+  max-width: var(--content-narrow);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text-soft);
+}
+
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+.layout {
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr 1.4fr;
+  }
+}
+
+.infoCard {
+  padding: 32px;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-subtle);
+  height: fit-content;
+}
+
+.infoTitle {
+  font-size: 16px;
+}
+
+.infoList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.infoLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-faint);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 560px) {
+  .formRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-soft);
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--color-text);
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-accent);
+}
+
+.submitNote {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--color-text-faint);
+}
+
+.sentNote {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-accent);
+}

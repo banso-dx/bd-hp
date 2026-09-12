@@ -1,0 +1,134 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.headerScrolled {
+  border-bottom-color: var(--color-border-subtle);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.logoEn {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--color-text-faint);
+}
+
+.nav {
+  display: none;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navList a:hover {
+  color: var(--color-accent);
+}
+
+.actions {
+  display: none;
+}
+
+.menuToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menuToggle span {
+  display: block;
+  height: 2px;
+  background: var(--color-text);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.menuToggleOpen span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menuToggleOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.menuToggleOpen span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobilePanel {
+  border-top: 1px solid var(--color-border-subtle);
+  background: var(--color-bg);
+}
+
+.mobileList {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 20px;
+}
+
+.mobileList a {
+  display: block;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.mobileActions {
+  display: flex;
+  gap: 12px;
+  padding: 4px 24px 20px;
+}
+
+.mobileActions .btn {
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: block;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .menuToggle {
+    display: none;
+  }
+}
