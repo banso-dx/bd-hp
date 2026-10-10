@@ -24,12 +24,12 @@ const SUBLINKS = ["プライバシーポリシー", "情報セキュリティ基
 
 export function SiteFooter() {
   return (
-    <footer className="flex w-full flex-col items-start gap-10 bg-[#7f1d1d] px-5 pt-12 pb-8 lg:gap-16 lg:px-20 lg:pt-20 lg:pb-10">
+    <footer className="flex w-full flex-col items-start gap-10 bg-[#0a1c36] px-5 pt-12 pb-8 lg:gap-16 lg:px-20 lg:pt-20 lg:pb-10">
       <div className="flex w-full flex-col items-start gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
         <div className="flex w-full flex-col items-start gap-4 lg:w-[400px] lg:gap-6">
           <div className="flex items-center gap-2">
             <span className="flex size-7 items-center justify-center rounded bg-white lg:size-8">
-              <span className="font-heading text-[16px] font-bold text-[#7f1d1d] lg:text-[18px]">
+              <span className="font-heading text-[16px] font-bold text-[#0a1c36] lg:text-[18px]">
                 N
               </span>
             </span>

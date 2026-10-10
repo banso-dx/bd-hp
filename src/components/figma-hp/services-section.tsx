@@ -25,7 +25,7 @@ export function ServicesSection() {
   return (
     <section className="flex w-full flex-col items-start gap-8 px-5 py-14 lg:gap-12 lg:px-20 lg:py-[100px]">
       <div className="flex flex-col items-start gap-2">
-        <p className="font-heading text-[12px] font-bold text-[#7f1d1d] lg:text-[14px]">
+        <p className="font-heading text-[12px] font-bold text-[#0a1c36] lg:text-[14px]">
           OUR SERVICES
         </p>
         <p className="text-[24px] leading-[34px] font-bold text-[#111827] lg:text-[28px] lg:leading-normal">
@@ -39,7 +39,7 @@ export function ServicesSection() {
             key={service.number}
             className="flex w-full flex-col items-start gap-4 rounded border border-[#e5e7eb] bg-white p-6 lg:flex-1 lg:gap-6 lg:p-8"
           >
-            <p className="font-heading text-[28px] font-bold text-[#7f1d1d] opacity-30 lg:text-[32px]">
+            <p className="font-heading text-[28px] font-bold text-[#0a1c36] opacity-30 lg:text-[32px]">
               {service.number}
             </p>
             <div className="flex flex-col items-start gap-1 lg:gap-2">
@@ -55,7 +55,7 @@ export function ServicesSection() {
             </p>
             <Link
               href="#"
-              className="flex items-center gap-2 pt-0 text-[#7f1d1d] lg:pt-3"
+              className="flex items-center gap-2 pt-0 text-[#0a1c36] lg:pt-3"
             >
               <span className="text-[13px] font-bold">詳しく見る</span>
               <span className="text-[12px]">→</span>

@@ -13,7 +13,7 @@ export function HeroSection() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[rgba(127,29,29,0.85)]" />
+        <div className="absolute inset-0 bg-[rgba(10,28,54,0.85)]" />
       </div>
 
       <div className="relative flex w-full flex-col items-start gap-6 lg:w-[780px]">
@@ -42,7 +42,7 @@ export function HeroSection() {
             href="#"
             className="flex w-full items-center justify-center rounded bg-white px-5 py-3.5 lg:w-auto lg:justify-start lg:px-8 lg:py-4"
           >
-            <span className="text-[14px] font-bold text-[#7f1d1d] lg:text-[15px]">
+            <span className="text-[14px] font-bold text-[#0a1c36] lg:text-[15px]">
               サービス概要を見る
             </span>
           </Link>

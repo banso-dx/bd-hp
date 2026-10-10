@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function CtaSection() {
   return (
-    <section className="flex w-full flex-col items-center gap-5 bg-[#7f1d1d] px-5 py-14 lg:gap-6 lg:px-20 lg:py-20">
+    <section className="flex w-full flex-col items-center gap-5 bg-[#0a1c36] px-5 py-14 lg:gap-6 lg:px-20 lg:py-20">
       <p className="text-center text-[20px] font-bold text-white lg:text-[28px]">
         ビジネス変革の旅を、ともに。
       </p>
@@ -13,7 +13,7 @@ export function CtaSection() {
         href="#"
         className="flex w-full items-center justify-center rounded bg-white px-6 py-3.5 lg:h-12 lg:w-auto lg:px-10 lg:py-4"
       >
-        <span className="text-[14px] font-bold text-[#7f1d1d] lg:text-[15px]">
+        <span className="text-[14px] font-bold text-[#0a1c36] lg:text-[15px]">
           無料相談・お問い合わせはこちら
         </span>
       </Link>

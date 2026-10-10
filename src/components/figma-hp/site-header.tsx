@@ -14,13 +14,13 @@ const NAV_ITEMS = [
 function Logo() {
   return (
     <Link href="/figma-hp" className="flex items-center gap-2 shrink-0">
-      <span className="flex size-7 lg:size-8 items-center justify-center rounded bg-[#7f1d1d]">
+      <span className="flex size-7 lg:size-8 items-center justify-center rounded bg-[#0a1c36]">
         <span className="font-heading text-[16px] lg:text-[18px] font-bold text-white">
           N
         </span>
       </span>
       <span className="flex flex-col gap-px leading-none">
-        <span className="font-heading text-[15px] lg:text-[18px] font-bold text-[#7f1d1d]">
+        <span className="font-heading text-[15px] lg:text-[18px] font-bold text-[#0a1c36]">
           NEXUS
         </span>
         <span className="text-[9px] font-medium text-[#4b5563]">
@@ -43,7 +43,7 @@ function MenuIcon({ open }: { open: boolean }) {
       >
         <path
           d="M5 5L19 19M5 19L19 5"
-          stroke="#7F1D1D"
+          stroke="#0A1C36"
           strokeWidth="2"
           strokeLinecap="round"
         />
@@ -60,7 +60,7 @@ function MenuIcon({ open }: { open: boolean }) {
     >
       <path
         d="M4.0008 4.9992H19.9992M4.0008 12H19.9992M4.0008 19.0008H19.9992"
-        stroke="#7F1D1D"
+        stroke="#0A1C36"
         strokeWidth="2"
         strokeLinecap="round"
       />
@@ -86,14 +86,14 @@ export function SiteHeader() {
               <span
                 className={
                   item.active
-                    ? "text-[14px] font-bold text-[#7f1d1d]"
+                    ? "text-[14px] font-bold text-[#0a1c36]"
                     : "text-[14px] font-medium text-[#111827]"
                 }
               >
                 {item.label}
               </span>
               {item.active && (
-                <span className="h-[2px] w-4 rounded-full bg-[#7f1d1d]" />
+                <span className="h-[2px] w-4 rounded-full bg-[#0a1c36]" />
               )}
             </Link>
           ))}
@@ -101,7 +101,7 @@ export function SiteHeader() {
 
         <Link
           href="#"
-          className="hidden lg:flex items-center rounded bg-[#7f1d1d] px-5 py-2.5"
+          className="hidden lg:flex items-center rounded bg-[#0a1c36] px-5 py-2.5"
         >
           <span className="text-[13px] font-semibold text-white whitespace-nowrap">
             資料請求・お問い合わせ
@@ -128,7 +128,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className={
                 item.active
-                  ? "py-3 text-[15px] font-bold text-[#7f1d1d]"
+                  ? "py-3 text-[15px] font-bold text-[#0a1c36]"
                   : "py-3 text-[15px] font-medium text-[#111827]"
               }
             >
@@ -138,7 +138,7 @@ export function SiteHeader() {
           <Link
             href="#"
             onClick={() => setOpen(false)}
-            className="mt-3 flex items-center justify-center rounded bg-[#7f1d1d] px-5 py-3"
+            className="mt-3 flex items-center justify-center rounded bg-[#0a1c36] px-5 py-3"
           >
             <span className="text-[14px] font-semibold text-white">
               資料請求・お問い合わせ

@@ -13,7 +13,7 @@ export function MissionSection() {
   return (
     <section className="flex w-full flex-col items-start gap-8 bg-[#f3f4f6] px-5 py-14 lg:gap-10 lg:px-20 lg:py-[100px]">
       <div className="flex flex-col items-start gap-2">
-        <p className="font-heading text-[12px] font-bold text-[#7f1d1d] lg:text-[14px]">
+        <p className="font-heading text-[12px] font-bold text-[#0a1c36] lg:text-[14px]">
           MISSION &amp; VISION
         </p>
         <p className="text-[24px] leading-[34px] font-bold text-[#111827] lg:text-[28px] lg:leading-normal">
@@ -27,7 +27,7 @@ export function MissionSection() {
             key={item.title}
             className="flex flex-1 flex-col items-start gap-3 lg:gap-6"
           >
-            <p className="text-[18px] leading-[26px] font-bold text-[#7f1d1d] lg:text-[20px] lg:leading-normal">
+            <p className="text-[18px] leading-[26px] font-bold text-[#0a1c36] lg:text-[20px] lg:leading-normal">
               {item.title}
             </p>
             <p className="text-[14px] leading-[24px] text-[#4b5563] lg:text-[15px] lg:leading-[1.8]">

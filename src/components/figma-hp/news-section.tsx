@@ -24,7 +24,7 @@ export function NewsSection() {
     <section className="flex w-full flex-col items-start gap-6 bg-[#f3f4f6] px-5 py-14 lg:gap-8 lg:px-20 lg:py-[100px]">
       <div className="flex w-full items-end justify-between">
         <div className="flex flex-col items-start gap-2">
-          <p className="font-heading text-[12px] font-bold text-[#7f1d1d] lg:text-[14px]">
+          <p className="font-heading text-[12px] font-bold text-[#0a1c36] lg:text-[14px]">
             LATEST NEWS
           </p>
           <p className="text-[24px] leading-[34px] font-bold text-[#111827] lg:text-[28px] lg:leading-normal">
@@ -33,7 +33,7 @@ export function NewsSection() {
         </div>
         <Link
           href="#"
-          className="hidden items-center gap-2 text-[14px] text-[#7f1d1d] lg:flex"
+          className="hidden items-center gap-2 text-[14px] text-[#0a1c36] lg:flex"
         >
           <span className="font-semibold">ニュース一覧へ</span>
           <span>→</span>
@@ -51,7 +51,7 @@ export function NewsSection() {
               <p className="font-heading w-auto shrink-0 text-[12px] text-[#4b5563] lg:w-[100px] lg:text-[14px]">
                 {item.date}
               </p>
-              <span className="shrink-0 rounded-sm bg-[rgba(127,29,29,0.04)] px-2 py-0.5 text-[11px] font-semibold text-[#7f1d1d] lg:px-3 lg:py-1 lg:text-[12px]">
+              <span className="shrink-0 rounded-sm bg-[rgba(10,28,54,0.04)] px-2 py-0.5 text-[11px] font-semibold text-[#0a1c36] lg:px-3 lg:py-1 lg:text-[12px]">
                 {item.tag}
               </span>
             </div>
@@ -65,7 +65,7 @@ export function NewsSection() {
 
       <Link
         href="#"
-        className="flex items-center gap-2 text-[14px] text-[#7f1d1d] lg:hidden"
+        className="flex items-center gap-2 text-[14px] text-[#0a1c36] lg:hidden"
       >
         <span className="font-semibold">ニュース一覧へ</span>
         <span>→</span>
