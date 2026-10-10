@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { siteConfig } from "@/lib/site-config";
-import styles from "@/app/contact/page.module.css";
+import styles from "@/app/(main)/contact/page.module.css";
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);
